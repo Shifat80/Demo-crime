@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full Screen Video Background</title>
+    <title>Crime 360</title>
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
@@ -31,8 +31,16 @@
             <button class="btn btn-primary">Report Incident</button>
             <button class="btn btn-secondary">View All Posts</button>
           </div>
-        </div>
-      </div>
+        </div>      </div>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('background-video');
+        // Set playback rate to 0.5 (half speed)
+        // You can adjust this value between 0.1 (very slow) to 1.0 (normal speed)
+        video.playbackRate = 0.5;
+      });
+    </script>
   </body>
 </html>
